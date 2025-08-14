@@ -1,4 +1,7 @@
-export const NotFoundPage = () => {
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const NotFoundPage = () => {
     return (
         <div className="max-w-4xl mx-auto px-4 py-16 text-center">
             <div className="mb-8">
@@ -10,21 +13,23 @@ export const NotFoundPage = () => {
             </div>
 
             <div className="space-y-4">
-                <a
-                    href="/"
+                <Link
+                    to="/"
                     className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200"
                 >
                     Go Home
-                </a>
+                </Link>
                 <div>
-                    <a href="/resources" className="text-blue-600 hover:text-blue-500 mx-4">
+                    <Link to="/resources" className="text-blue-600 hover:text-blue-500 mx-4">
                         Browse Resources
-                    </a>
-                    <a href="/lawyers" className="text-blue-600 hover:text-blue-500 mx-4">
+                    </Link>
+                    <Link to="/lawyers" className="text-blue-600 hover:text-blue-500 mx-4">
                         Find Lawyers
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
     );
 };
+
+export default NotFoundPage;

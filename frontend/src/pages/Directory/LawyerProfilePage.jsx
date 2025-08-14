@@ -1,4 +1,6 @@
+import React from 'react';
 import { useParams } from 'react-router-dom';
+import { Users, MapPin, Star, Phone, Mail, Calendar } from 'lucide-react';
 
 export const LawyerProfilePage = () => {
     const { id } = useParams();

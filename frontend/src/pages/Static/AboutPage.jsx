@@ -1,7 +1,7 @@
 import React from 'react';
 import { Users, Target, Award, Heart } from 'lucide-react';
 
-export const AboutPage = () => {
+const AboutPage = () => {
     const values = [
         {
             icon: Target,
@@ -80,3 +80,5 @@ export const AboutPage = () => {
         </div>
     );
 };
+
+export default AboutPage;

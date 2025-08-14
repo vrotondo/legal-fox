@@ -1,4 +1,6 @@
-export const ProfilePage = () => {
+import React from 'react';
+
+const ProfilePage = () => {
     return (
         <div className="max-w-4xl mx-auto px-4 py-8">
             <h1 className="text-3xl font-bold text-gray-900 mb-8">My Profile</h1>
@@ -8,3 +10,5 @@ export const ProfilePage = () => {
         </div>
     );
 };
+
+export default ProfilePage;

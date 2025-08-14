@@ -1,4 +1,7 @@
-export const RegisterPage = () => {
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
+const RegisterPage = () => {
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -116,3 +119,5 @@ export const RegisterPage = () => {
         </div>
     );
 };
+
+export default RegisterPage;

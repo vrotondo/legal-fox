@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const ContactPage = () => {
     return (
         <div className="max-w-4xl mx-auto px-4 py-12">
